@@ -14,11 +14,11 @@ class TrainAProcess extends Thread {
     public void run() {   // start train Process
         // wait for clearance before moving on to the track
         theTrack.trainA_MoveOnToTrack(trainName); // move on to track A
-        theTrack.trainA_MoveAroundToJunction(trainName); // move around A loop
-        theTrack.trainA_MoveThroughJunction(trainName); // move along shared track
-        theTrack.trainA_moveAroundBToJunction(trainName);
-        theTrack.trainA_MoveThroughJunctionFromBTrack(trainName);
-        theTrack.trainA_MoveAroundToExit(trainName);
+        theTrack.trainA_MoveFromEntryToJunction();; // move around A loop
+        theTrack.moveTrainThroughJunctionFromATrack(); // move along shared track
+        theTrack.trainA_moveAroundBToJunction();
+        theTrack.moveTrainThroughJunctionFromBTrack();
+        theTrack.trainA_MoveAroundToExit();
         theTrack.trainA_MoveOffTrack(trainName); // move off the track */
     } // end run
 

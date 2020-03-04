@@ -42,8 +42,8 @@ public class TrainTrack {
         aUsingJunction = new AtomicInteger(0);
         bUsingJunction = new AtomicInteger(0);
         // create  semaphores for limiting number of trains on track
-        aCountSem = new MageeSemaphore(4);
-        bCountSem = new MageeSemaphore(4);
+        aCountSem = new MageeSemaphore(3);
+        bCountSem = new MageeSemaphore(3);
         // initially shared track is accessible
         junctionLock = new MageeSemaphore(1);
     }  // constructor
@@ -71,37 +71,31 @@ public class TrainTrack {
         // }// end trainB_movedOnToTrack
     }
 
-    public void trainA_MoveAroundToJunction(String trainName) {
+    public void trainA_MoveFromEntryToJunction() {
         CDS.idleQuietly((int) (Math.random() * 100));
-        int currentPosition = 5;
-        do {
-            // wait until the position ahead is empty and then move into it
-            slotSem[currentPosition + 1].P(); // wait for the slot ahead to be free
-            slots[currentPosition + 1] = slots[currentPosition]; // move train forward one position
-            slots[currentPosition] = "[..]"; // clear the slot the train vacated
-            theTrainActivity.addMovedTo(currentPosition + 1); // record the train activity
-            slotSem[currentPosition].V(); // signal slot you are leaving
-            currentPosition++;
-        } while (currentPosition < 8);
+        moveTrainAroundTrack(5,8);
         CDS.idleQuietly((int) (Math.random() * 100));
     } // end trainA_MoveAroundToJunction
 
-    public void trainB_MoveAroundToJunction(String trainName) {
+    public void trainB_MoveFromEntryToJunction() {
         CDS.idleQuietly((int) (Math.random() * 100));
-        int currentPosition = 14;
+        moveTrainAroundTrack(14, 17);
+        CDS.idleQuietly((int) (Math.random() * 100));
+    } // end trainB_MoveAroundToJunction
+
+    private void moveTrainAroundTrack(int startPosition, int endPosition) {
+        int currentPosition = startPosition;
         do {
-            /* wait until the position ahead is empty and then move into it*/
             slotSem[currentPosition + 1].P(); // wait for the slot ahead to be free
             slots[currentPosition + 1] = slots[currentPosition]; // move train forward
             slots[currentPosition] = "[..]"; //clear the slot the train vacated
             theTrainActivity.addMovedTo(currentPosition + 1); //record the train activity
             slotSem[currentPosition].V(); //signal slot you are leaving
             currentPosition++;
-        } while (currentPosition < 17);
-        CDS.idleQuietly((int) (Math.random() * 100));
-    } // end trainB_MoveAroundToJunction
+        } while (currentPosition < endPosition);
+    }
 
-    public void trainA_MoveThroughJunction(String trainName) {
+    public void moveTrainThroughJunctionFromATrack() {
         // wait for the necessary conditions to get access to shared track
         aMutexSem.P(); // obtain mutually exclusive access to global variable aUsingJunction
         if (aUsingJunction.incrementAndGet() == 1)// if first A train joining shared track
@@ -145,7 +139,7 @@ public class TrainTrack {
         CDS.idleQuietly((int) (Math.random() * 10));
     }// end   trainA_MoveThroughJunction
 
-    public void trainB_MoveThroughJunction(String trainName) {
+    public void moveTrainThroughJunctionFromBTrack() {
         CDS.idleQuietly((int) (Math.random() * 10));
         // wait for the necessary conditions to get access to shared track
         bMutexSem.P(); // obtain mutually exclusive access to global variable bUsingJunction
@@ -192,154 +186,27 @@ public class TrainTrack {
         CDS.idleQuietly((int) (Math.random() * 10));
     }// end   trainB_MoveThroughJunction
 
-    public void trainA_moveAroundBToJunction(String trainName) {
+    public void trainA_moveAroundBToJunction() {
         CDS.idleQuietly((int) (Math.random() * 100));
-        int currentPosition = 11;
-        do {
-            /* wait until the position ahead is empty and then move into it*/
-            slotSem[currentPosition + 1].P(); // wait for the slot ahead to be free
-            slots[currentPosition + 1] = slots[currentPosition]; // move train forward
-            slots[currentPosition] = "[..]"; //clear the slot the train vacated
-            theTrainActivity.addMovedTo(currentPosition + 1); //record the train activity
-            slotSem[currentPosition].V(); //signal slot you are leaving
-            currentPosition++;
-        } while (currentPosition < 17);
+        moveTrainAroundTrack(11, 17);
         CDS.idleQuietly((int) (Math.random() * 100));
     } // end trainA_MoveAroundBToJunction
 
-    public void trainB_moveAroundAToJunction(String trainName) {
+    public void trainB_moveAroundAToJunction() {
         CDS.idleQuietly((int) (Math.random() * 100));
-        int currentPosition = 2;
-        do {
-            /* wait until the position ahead is empty and then move into it*/
-            slotSem[currentPosition + 1].P(); // wait for the slot ahead to be free
-            slots[currentPosition + 1] = slots[currentPosition]; // move train forward
-            slots[currentPosition] = "[..]"; //clear the slot the train vacated
-            theTrainActivity.addMovedTo(currentPosition + 1); //record the train activity
-            slotSem[currentPosition].V(); //signal slot you are leaving
-            currentPosition++;
-        } while (currentPosition < 8);
+        moveTrainAroundTrack(2,8);
         CDS.idleQuietly((int) (Math.random() * 100));
     } // end trainB_MoveAroundAToJunction
 
-    public void trainA_MoveThroughJunctionFromBTrack(String trainName) {
-        CDS.idleQuietly((int) (Math.random() * 10));
-        // wait for the necessary conditions to get access to shared track
-        bMutexSem.P(); // obtain mutually exclusive access to global variable bUsingJunction
-        if (bUsingJunction.incrementAndGet() == 1)// if first B train joining shared track
-        {
-            junctionLock.P();  // grab lock to shared track
-        }
-        bMutexSem.V(); // release mutually exclusive access to global variable bUsingJunction
-        CDS.idleQuietly((int) (Math.random() * 10));
-        // move on to shared track
-        slotSem[9].P();
-        slotSem[18].P();
-        slots[18] = slots[17];
-        slots[17] = "[..]";
-        slotSem[17].V(); //move from slot[6] to slot[7]
-        theTrainActivity.addMovedTo(18);  //record the train activity
-        CDS.idleQuietly((int) (Math.random() * 10));
-        // move along shared track
-        slotSem[0].P();
-        slotSem[1].P();
-        slots[0] = slots[18];
-        slots[18] = "[..]";
-        slotSem[9].V();
-        slotSem[18].V(); //move from slot[7] to slot[8]
-        theTrainActivity.addMovedTo(0); // record the train activity
-        slots[1] = slots[0];
-        slots[0] = "[..]";
-        theTrainActivity.addMovedTo(1); // record the train activity
-        CDS.idleQuietly((int) (Math.random() * 10));
-        // move off shared track
-        slotSem[2].P();
-        slots[2] = slots[1];
-        slots[1] = "[..]";
-        slotSem[0].V();
-        slotSem[1].V(); //move from slot[9] to slot[0]
-        theTrainActivity.addMovedTo(2); // record the train activity
-        // signal conditions when leaving shared track
-        bMutexSem.P(); // obtain mutually exclusive access to global variable aUsingJunction
-        if (bUsingJunction.decrementAndGet() == 0) // if last B train leaving shared track
-        {
-            junctionLock.V(); // release lock to shared track
-        }
-        bMutexSem.V(); // release mutually exclusive access to global variable aUsingJunction
-        CDS.idleQuietly((int) (Math.random() * 10));
-    }// end   trainB_MoveThroughJunction
-
-    public void trainB_MoveThroughJunctionFromATrack(String trainName) {
-        // wait for the necessary conditions to get access to shared track
-        aMutexSem.P(); // obtain mutually exclusive access to global variable aUsingJunction
-        if (aUsingJunction.incrementAndGet() == 1)// if first A train joining shared track
-        {
-            junctionLock.P();  // grab lock to shared track
-        }
-        aMutexSem.V(); // release mutually exclusive access to global variable aUsingJunction
-        slotSem[9].P();
-        slotSem[18].P();
-        slots[9] = slots[8];
-        slots[8] = "[..]";
-        slotSem[8].V(); //move from slot[10] to slot[9]
-        theTrainActivity.addMovedTo(9);  //record the train activity
-        CDS.idleQuietly((int) (Math.random() * 10));
-        // move along shared track
-        slotSem[0].P();
-        slotSem[10].P();
-        slots[0] = slots[9];
-        slots[9] = "[..]";
-        slotSem[9].V(); //move from slot[9] to slot[8]
-        slotSem[18].V();
-        theTrainActivity.addMovedTo(0); // record the train activity
-        slots[10] = slots[0];
-        slots[0] = "[..]";
-        theTrainActivity.addMovedTo(10); // record the train activity
-        CDS.idleQuietly((int) (Math.random() * 10));
-        // move off shared track
-        slotSem[11].P();
-        slots[11] = slots[10];
-        slots[10] = "[..]";
-        slotSem[0].V();
-        slotSem[10].V(); //move from slot[7] to slot[16]
-        theTrainActivity.addMovedTo(11); // record the train activity
-        // signal conditions when leaving shared track
-        aMutexSem.P(); // obtain mutually exclusive access to global variable aUsingJunction
-        if (aUsingJunction.decrementAndGet() == 0) // if last A train leaving shared track
-        {
-            junctionLock.V(); // release lock to shared track
-        }
-        aMutexSem.V(); // release mutually exclusive access to global variable aUsingJunction
-        CDS.idleQuietly((int) (Math.random() * 10));
-    }// end   trainB_MoveThroughJunctionFromTrackA
-
-    public void trainA_MoveAroundToExit(String trainName) {
+    public void trainA_MoveAroundToExit() {
         CDS.idleQuietly((int) (Math.random() * 100));
-        int currentPosition = 2;
-        do {
-            // wait until the position ahead is empty and then move into it
-            slotSem[currentPosition + 1].P(); // wait for the slot ahead to be free
-            slots[currentPosition + 1] = slots[currentPosition]; // move train forward one position
-            slots[currentPosition] = "[..]"; // clear the slot the train vacated
-            theTrainActivity.addMovedTo(currentPosition + 1); // record the train activity
-            slotSem[currentPosition].V(); // signal slot you are leaving
-            currentPosition++;
-        } while (currentPosition < 5);
+        moveTrainAroundTrack(2,5);
         CDS.idleQuietly((int) (Math.random() * 100));
     } // end trainA_MoveAroundToJunction
 
-    public void trainB_MoveAroundToExit(String trainName) {
+    public void trainB_MoveAroundToExit() {
         CDS.idleQuietly((int) (Math.random() * 100));
-        int currentPosition = 11;
-        do {
-            // wait until the position ahead is empty and then move into it
-            slotSem[currentPosition + 1].P(); // wait for the slot ahead to be free
-            slots[currentPosition + 1] = slots[currentPosition]; // move train forward one position
-            slots[currentPosition] = "[..]"; // clear the slot the train vacated
-            theTrainActivity.addMovedTo(currentPosition + 1); // record the train activity
-            slotSem[currentPosition].V(); // signal slot you are leaving
-            currentPosition++;
-        } while (currentPosition < 14);
+        moveTrainAroundTrack(11,14);
         CDS.idleQuietly((int) (Math.random() * 100));
     } // end trainA_MoveAroundToJunction
 

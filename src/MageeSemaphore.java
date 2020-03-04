@@ -11,15 +11,15 @@ class MageeSemaphore
         sem = new Semaphore(initialCount);
     } // end constructor
 
-    public void P()
-    {
+    public void P() {
         try {
             sem.acquire();
-        } catch (InterruptedException ex) {System.out.println("Interrupted when waiting");}
-    } // end P()
+        } catch (InterruptedException ex) {
+            System.out.println("Interrupted when waiting");
+        } // end P()
+    }
 
-    public void V()
-    {
+    public void V() {
         sem.release();
     } // end V()
 
