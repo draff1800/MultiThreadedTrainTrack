@@ -3,6 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="383539d4-b614-4f89-913f-8669953af7a8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CDS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CDS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MageeSemaphore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MageeSemaphore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProcessMonitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProcessMonitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TrainAProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TrainAProcess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TrainBProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TrainBProcess.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TrainTrack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TrainTrack.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -17,11 +23,72 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MainDriver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MageeSemaphore.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+              <folding>
+                <element signature="e#132#133#0" expanded="true" />
+                <element signature="e#181#182#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TrainAProcess.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TrainTrack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+            <state relative-caret-position="51">
+              <caret line="3" column="8" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ProcessMonitor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/CDS.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="70" lean-forward="true" selection-start-line="5" selection-start-column="70" selection-end-line="5" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TrainBProcess.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="20" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -61,6 +128,7 @@
       <find>a0 is</find>
       <find>moveTrainBAroundASide</find>
       <find>b is leaving</find>
+      <find>the</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -99,13 +167,13 @@
         <option value="$PROJECT_DIR$/src/TrainProcesses/TrainSystem.java" />
         <option value="$PROJECT_DIR$/src/TrainProcesses/TrainBProcess.java" />
         <option value="$PROJECT_DIR$/src/TrainProcesses/ProcessMonitor.java" />
-        <option value="$PROJECT_DIR$/src/MainDriver.java" />
         <option value="$PROJECT_DIR$/src/MageeSemaphore.java" />
-        <option value="$PROJECT_DIR$/src/ProcessMonitor.java" />
         <option value="$PROJECT_DIR$/src/CDS.java" />
+        <option value="$PROJECT_DIR$/src/ProcessMonitor.java" />
         <option value="$PROJECT_DIR$/src/TrainAProcess.java" />
         <option value="$PROJECT_DIR$/src/TrainBProcess.java" />
         <option value="$PROJECT_DIR$/src/TrainTrack.java" />
+        <option value="$PROJECT_DIR$/src/MainDriver.java" />
       </list>
     </option>
   </component>
@@ -215,18 +283,17 @@
       <workItem from="1583330604856" duration="595000" />
       <workItem from="1583445017497" duration="14480000" />
       <workItem from="1583511961988" duration="1981000" />
-      <workItem from="1583514044863" duration="1033000" />
+      <workItem from="1583514044863" duration="16490000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119923000" />
+    <option name="totallyTimeSpent" value="135380000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29127517" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29127517" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -235,7 +302,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.398017" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.70963174" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -307,59 +374,59 @@
     <entry file="file://$PROJECT_DIR$/src/Practical5/TrainTrackProcessB.java" />
     <entry file="file://$PROJECT_DIR$/src/Practical5/Consumer.java" />
     <entry file="file://$PROJECT_DIR$/src/Practical5/TrainTrack.java" />
-    <entry file="file://$PROJECT_DIR$/src/CDS.java">
+    <entry file="file://$PROJECT_DIR$/src/TrainTrack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="51">
+          <caret line="3" column="8" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MageeSemaphore.java">
+    <entry file="file://$PROJECT_DIR$/src/TrainAProcess.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="30" selection-start-column="30" selection-end-column="30" />
-          <folding>
-            <element signature="e#388#389#0" expanded="true" />
-            <element signature="e#417#418#0" expanded="true" />
-          </folding>
+          <caret selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TrainBProcess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="20" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MainDriver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        <state relative-caret-position="233">
+          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MageeSemaphore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+          <folding>
+            <element signature="e#132#133#0" expanded="true" />
+            <element signature="e#181#182#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ProcessMonitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+        <state relative-caret-position="114">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TrainAProcess.java">
+    <entry file="file://$PROJECT_DIR$/src/CDS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TrainBProcess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TrainTrack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+        <state relative-caret-position="85">
+          <caret line="5" column="70" lean-forward="true" selection-start-line="5" selection-start-column="70" selection-end-line="5" selection-end-column="70" />
         </state>
       </provider>
     </entry>

@@ -12,17 +12,20 @@ public class ProcessMonitor {
         this.trainTrack = trainTrack;
     }
 
+    //Add "moved" activity message
     public void addMovedTo(int section) {
         String tempString1 = "Train " + trainTrack[section] + " moving/moved to [" + section + "]";
         theActivities.add(tempString1);
         theActivities.add(trackString());
     }
 
+    //Add custom message
     public void addMessage(String message) {
         String tempString1 = message;
         theActivities.add(tempString1);
     }
 
+    //Print added messages
     public void printActivities() {
         System.out.println("TRAIN TRACK ACTIVITY(Tracks [0..16])");
         Iterator<String> iterator = theActivities.iterator();
@@ -31,6 +34,7 @@ public class ProcessMonitor {
         }
     }
 
+    //Returns an image of the track including trains' current positions
     public String trackString() {
         String trackStateAsString = "       " + trainTrack[5] + "\n"
                 + "   " + trainTrack[4] + "    " + trainTrack[6] + "\n"

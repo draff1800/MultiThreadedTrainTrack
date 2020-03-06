@@ -9,6 +9,7 @@ class MageeSemaphore
         sem = new Semaphore(initialCount);
     }
 
+    //Lock Semaphore (Decrement initialCount)
     public void P() {
         try {
             sem.acquire();
@@ -17,6 +18,7 @@ class MageeSemaphore
         }
     }
 
+    //Lock Semaphore (Increment initialCount)
     public void V() {
         sem.release();
     }

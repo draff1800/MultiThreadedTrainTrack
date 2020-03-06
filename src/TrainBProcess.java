@@ -8,7 +8,7 @@ class TrainBProcess extends Thread {
     }
 
     @Override
-    public void run() {
+    public void run() { //Move a single trainB from entry to exit
         theTrack.insertTrainBOnToTrack(trainName);
         theTrack.moveTrainBFromInsertionToJunction();
         theTrack.moveTrainThroughJunctionToASide();
