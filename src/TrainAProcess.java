@@ -9,13 +9,13 @@ class TrainAProcess extends Thread {
 
     @Override
     public void run() {
-        theTrack.trainA_MoveOnToTrack(trainName);
-        theTrack.trainA_MoveFromEntryToJunction();
-        theTrack.moveTrainThroughJunctionFromATrack();
-        theTrack.trainA_moveAroundBToJunction();
-        theTrack.moveTrainThroughJunctionFromBTrack();
-        theTrack.trainA_MoveAroundToExit();
-        theTrack.trainA_MoveOffTrack(trainName);
+        theTrack.insertTrainAOnToTrack(trainName);
+        theTrack.moveTrainAFromInsertionToJunction();
+        theTrack.moveTrainThroughJunctionToBSide();
+        theTrack.moveTrainAAroundBSide();
+        theTrack.moveTrainThroughJunctionToASide();
+        theTrack.moveTrainAToExit();
+        theTrack.removeTrainAFromTrack(trainName);
     }
 
 }

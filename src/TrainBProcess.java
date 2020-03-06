@@ -1,4 +1,5 @@
 class TrainBProcess extends Thread {
+
     String trainName;
     TrainTrack theTrack;
     public TrainBProcess(String trainName, TrainTrack theTrack) {
@@ -8,12 +9,13 @@ class TrainBProcess extends Thread {
 
     @Override
     public void run() {
-        theTrack.trainB_MoveOnToTrack(trainName);
-        theTrack.trainB_MoveFromEntryToJunction();
-        theTrack.moveTrainThroughJunctionFromBTrack();
-        theTrack.trainB_moveAroundAToJunction();
-        theTrack.moveTrainThroughJunctionFromATrack();
-        theTrack.trainB_MoveAroundToExit();
-        theTrack.trainB_MoveOffTrack(trainName);
+        theTrack.insertTrainBOnToTrack(trainName);
+        theTrack.moveTrainBFromInsertionToJunction();
+        theTrack.moveTrainThroughJunctionToASide();
+        theTrack.moveTrainBAroundASide();
+        theTrack.moveTrainThroughJunctionToBSide();
+        theTrack.moveTrainBToExit();
+        theTrack.removeTrainBFromTrack(trainName);
     }
+
 }

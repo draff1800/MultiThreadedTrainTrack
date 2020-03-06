@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="383539d4-b614-4f89-913f-8669953af7a8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CDS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CDS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MageeSemaphore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MageeSemaphore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProcessMonitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProcessMonitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrent_Assignment1a.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiThreadedTrainTrack.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/concurrent_Assignment1a/TrainAProcess.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/concurrent_Assignment1a/TrainAProcess.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/concurrent_Assignment1a/TrainBProcess.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/concurrent_Assignment1a/TrainBProcess.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/concurrent_Assignment1a/TrainTrack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/concurrent_Assignment1a/TrainTrack.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TrainAProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TrainAProcess.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TrainBProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TrainBProcess.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TrainTrack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TrainTrack.java" afterDir="false" />
@@ -22,77 +23,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MainDriver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="41" column="47" lean-forward="true" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TrainTrack.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3502">
-              <caret line="206" column="4" selection-start-line="206" selection-start-column="4" selection-end-line="206" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/CDS.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MageeSemaphore.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="8" column="15" lean-forward="true" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="16" />
-              <folding>
-                <element signature="e#417#418#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ProcessMonitor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TrainAProcess.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TrainBProcess.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -113,6 +44,20 @@
       <find>b9</find>
       <find>Sy</find>
       <find>System</find>
+      <find>//</find>
+      <find>amutexsem</find>
+      <find>ausing</find>
+      <find>ausi</find>
+      <find>b9 is leaving</find>
+      <find>junctionlock</find>
+      <find>b9 is leavin</find>
+      <find>a0 is leaving</find>
+      <find>a9 is leaving</find>
+      <find>b4 is leaving</find>
+      <find>b5 is leaving</find>
+      <find>a0 is</find>
+      <find>moveTrainBAroundASide</find>
+      <find>b is leaving</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -151,13 +96,13 @@
         <option value="$PROJECT_DIR$/src/TrainProcesses/TrainSystem.java" />
         <option value="$PROJECT_DIR$/src/TrainProcesses/TrainBProcess.java" />
         <option value="$PROJECT_DIR$/src/TrainProcesses/ProcessMonitor.java" />
-        <option value="$PROJECT_DIR$/src/TrainTrack.java" />
         <option value="$PROJECT_DIR$/src/MainDriver.java" />
         <option value="$PROJECT_DIR$/src/MageeSemaphore.java" />
         <option value="$PROJECT_DIR$/src/ProcessMonitor.java" />
+        <option value="$PROJECT_DIR$/src/CDS.java" />
+        <option value="$PROJECT_DIR$/src/TrainTrack.java" />
         <option value="$PROJECT_DIR$/src/TrainAProcess.java" />
         <option value="$PROJECT_DIR$/src/TrainBProcess.java" />
-        <option value="$PROJECT_DIR$/src/CDS.java" />
       </list>
     </option>
   </component>
@@ -180,11 +125,6 @@
               <item name="concurrent_Assignment1a" type="b2602c69:ProjectViewProjectNode" />
               <item name="concurrent_Assignment1a" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="concurrent_Assignment1a" type="b2602c69:ProjectViewProjectNode" />
-              <item name="concurrent_Assignment1a" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -197,6 +137,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -220,14 +161,14 @@
   <component name="RunManager" selected="Application.MainDriver (1)">
     <configuration name="MainDriver (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainDriver" />
-      <module name="concurrent_Assignment1a" />
+      <module name="MultiThreadedTrainTrack" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="MainDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Practical5.MainDriver" />
-      <module name="concurrent_Assignment1a" />
+      <module name="MultiThreadedTrainTrack" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Practical5.*" />
@@ -262,17 +203,51 @@
       <workItem from="1582718476974" duration="17742000" />
       <workItem from="1582811611856" duration="25652000" />
       <workItem from="1583240122062" duration="5674000" />
-      <workItem from="1583287830796" duration="2311000" />
+      <workItem from="1583287830796" duration="2996000" />
+      <workItem from="1583330604856" duration="595000" />
+      <workItem from="1583445017497" duration="14480000" />
+      <workItem from="1583511961988" duration="1981000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101149000" />
+    <option name="totallyTimeSpent" value="118890000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2751678" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2872483" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.398017" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3286119" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2872483" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -301,36 +276,6 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Image Layers" order="0" />
-      <window_info id="Designer" order="1" />
-      <window_info id="UI Designer" order="2" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.24966443" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="2" />
-      <window_info anchor="bottom" id="Database Changes" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" />
-      <window_info anchor="bottom" id="Run" order="7" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="right" id="Palette" order="0" />
-      <window_info anchor="right" id="Theme Preview" order="1" />
-      <window_info anchor="right" id="Capture Analysis" order="2" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -352,13 +297,28 @@
     <entry file="file://$PROJECT_DIR$/src/Practical5/TrainTrackProcessB.java" />
     <entry file="file://$PROJECT_DIR$/src/Practical5/Consumer.java" />
     <entry file="file://$PROJECT_DIR$/src/Practical5/TrainTrack.java" />
+    <entry file="file://$PROJECT_DIR$/src/CDS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/MageeSemaphore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="15" lean-forward="true" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="16" />
+        <state>
+          <caret column="30" selection-start-column="30" selection-end-column="30" />
           <folding>
+            <element signature="e#388#389#0" expanded="true" />
             <element signature="e#417#418#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
         </state>
       </provider>
     </entry>
@@ -374,36 +334,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TrainAProcess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        <state relative-caret-position="323">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TrainBProcess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="41" column="47" lean-forward="true" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+        <state relative-caret-position="323">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TrainTrack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3502">
-          <caret line="206" column="4" selection-start-line="206" selection-start-column="4" selection-end-line="206" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CDS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="867">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
         </state>
       </provider>
     </entry>
