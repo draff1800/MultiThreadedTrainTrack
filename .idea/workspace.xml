@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="383539d4-b614-4f89-913f-8669953af7a8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/concurrent_Assignment1a.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiThreadedTrainTrack.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/concurrent_Assignment1a/TrainAProcess.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/concurrent_Assignment1a/TrainAProcess.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/concurrent_Assignment1a/TrainBProcess.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/concurrent_Assignment1a/TrainBProcess.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/concurrent_Assignment1a/TrainTrack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/concurrent_Assignment1a/TrainTrack.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TrainAProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TrainAProcess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TrainBProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TrainBProcess.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TrainTrack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TrainTrack.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,7 +16,17 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/TrainTrack.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="93">
+              <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -100,9 +103,9 @@
         <option value="$PROJECT_DIR$/src/MageeSemaphore.java" />
         <option value="$PROJECT_DIR$/src/ProcessMonitor.java" />
         <option value="$PROJECT_DIR$/src/CDS.java" />
-        <option value="$PROJECT_DIR$/src/TrainTrack.java" />
         <option value="$PROJECT_DIR$/src/TrainAProcess.java" />
         <option value="$PROJECT_DIR$/src/TrainBProcess.java" />
+        <option value="$PROJECT_DIR$/src/TrainTrack.java" />
       </list>
     </option>
   </component>
@@ -118,19 +121,24 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="concurrent_Assignment1a" type="b2602c69:ProjectViewProjectNode" />
-              <item name="concurrent_Assignment1a" type="462c0819:PsiDirectoryNode" />
+              <item name="MultiThreadedTrainTrack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MultiThreadedTrainTrack" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MultiThreadedTrainTrack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MultiThreadedTrainTrack" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -207,16 +215,18 @@
       <workItem from="1583330604856" duration="595000" />
       <workItem from="1583445017497" duration="14480000" />
       <workItem from="1583511961988" duration="1981000" />
+      <workItem from="1583514044863" duration="1033000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118890000" />
+    <option name="totallyTimeSpent" value="119923000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2872483" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29127517" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -225,7 +235,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.398017" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.398017" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -348,8 +358,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TrainTrack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="93">
+          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
         </state>
       </provider>
     </entry>

@@ -7,8 +7,7 @@ public class TrainTrack {
 
     ProcessMonitor theTrainActivity;
 
-    MageeSemaphore aTrainLimitSem;
-    MageeSemaphore bTrainLimitSem;
+    MageeSemaphore trainLimitSem;
 
     MageeSemaphore junctionSem;
 
@@ -17,14 +16,13 @@ public class TrainTrack {
         for (int i = 0; i <= 18; i++) {
             slotSem[i] = new MageeSemaphore(1);
         }
-        aTrainLimitSem = new MageeSemaphore(4);
-        bTrainLimitSem = new MageeSemaphore(4);
+        trainLimitSem = new MageeSemaphore(8);
         junctionSem = new MageeSemaphore(1);
     }
 
     public void insertTrainAOnToTrack(String trainName) {
         CDS.idleQuietly((int) (Math.random() * 100));
-        aTrainLimitSem.P();
+        trainLimitSem.P();
         slotSem[5].P();
         slots[5] = "[" + trainName + "]";
         theTrainActivity.addMovedTo(5);
@@ -32,7 +30,7 @@ public class TrainTrack {
 
     public void insertTrainBOnToTrack(String trainName) {
         CDS.idleQuietly((int) (Math.random() * 100));
-        bTrainLimitSem.P();
+        trainLimitSem.P();
         slotSem[14].P();
         slots[14] = "[" + trainName + "]";
         theTrainActivity.addMovedTo(14);
@@ -148,7 +146,7 @@ public class TrainTrack {
         slots[5] = "[..]";
         slotSem[5].V();
         CDS.idleQuietly((int) (Math.random() * 10));
-        aTrainLimitSem.V();
+        trainLimitSem.V();
     }
 
     public void removeTrainBFromTrack(String trainName) {
@@ -157,7 +155,7 @@ public class TrainTrack {
         slots[14] = "[..]";
         slotSem[14].V();
         CDS.idleQuietly((int) (Math.random() * 10));
-        bTrainLimitSem.V();
+        trainLimitSem.V();
     }
 
 }
